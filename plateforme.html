@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 20px 20px 40px;
+      position: relative;
+      text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img.logo {
+      height: 60px;
+    }
+
+    .welcome {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .profile-picture {
+      margin-top: 20px;
+    }
+
+    .profile-picture img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+      color: #111827;
+    }
+
+    section p {
+      margin: 10px 0;
+      color: #374151;
+    }
+
+    .info-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-list li {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 700px) {
+      .header-content {
+        flex-direction: column;
+      }
+
+      header img.logo {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Logo_ministere_numerique.png" alt="Logo Ministère du Numérique" class="logo" />
+      <img src="ESF_Logo.jpeg" alt="Logo Université" class="logo" />
+    </div>
+
+    <div class="welcome">Bienvenue sur ma plateforme</div>
+
+    <div class="profile-picture">
+      <img src="Student_image.jpg" alt="Ma Photo de Profil" />
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>I - État Civil</h2>
+      <ul class="info-list">
+        <li><strong>Nom :</strong> ADONON</li>
+        <li><strong>Prénoms :</strong> Ulrich</li>
+        <li><strong>Âge :</strong> 23 ans</li>
+        <li><strong>Contact :</strong>0152438071</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>II - Mes Formations</h2>
+      <ul class="info-list">
+        <li>CEP</li>
+        <li>BEPC</li>
+        <li>BAC</li>
+        <li>Designer Graphique</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>III - Description</h2>
+      <p>
+        Je suis un passionné de technologie et de design, toujours prêt à relever de nouveaux défis pour développer des solutions innovantes dans le domaine du numérique. 
+        Cette plateforme me permet de présenter mes compétences et mon parcours.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
